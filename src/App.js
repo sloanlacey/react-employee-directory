@@ -1,4 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import { populateEmpList } from './API';
 
 function App() {
   return (
