@@ -1,14 +1,15 @@
 import React from 'react';
-import EmployeeTable from './EmployeeTable';
+import EmployeeTable from './components/EmployeeTable';
 import './App.css';
-import SearchBar from './SearchBar';
+import SearchBar from './components/SearchBar';
+import Jumbotron from './components/Jumbotron';
 
-const Title = () => <h1 style={{width: '100%', textAlign: 'center'}}>Employee Directory</h1>
+// const Title = () => <h1 style={{width: '100%', textAlign: 'center'}}>Employee Directory</h1>
 
 function App() {
   return (
     <>
-    <Title />
+    <Jumbotron />
     <br></br>
     <SearchBar />
     <br></br>
