@@ -7,7 +7,7 @@ const EmployeeTable = () => {
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-        fetch('https://randomuser.me/api/?results=10&nat=us')
+        fetch('https://randomuser.me/api/?results=100&nat=us')
         .then((res) => res.json())
         .then((res) => {
             setEmployees(res.results)}
@@ -30,7 +30,7 @@ const EmployeeTable = () => {
       </tr>
     </thead>
     <tbody>
-        {employees.map(({ name, email, location, login, dob, phone, picture }) => (
+        {employees.filter(e => e.name.first.indexOf('A') !== -1).map(({ name, email, location, login, dob, phone, picture }) => (
         <EmployeeRow name={name} email={email} location={location} login={login} dob={dob} phone={phone} picture={picture} />))}
     </tbody>
   </Table>
