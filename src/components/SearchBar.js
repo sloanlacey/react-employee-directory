@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from 'react-bootstrap';
 
 const SearchBar = (props) => {
     return (
@@ -15,6 +16,7 @@ const SearchBar = (props) => {
           placeholder="Type in a first name to search for an employee"
           id="term"
         />
+        <Button variant="primary">Search</Button>
       </div>
     </form>
     );
