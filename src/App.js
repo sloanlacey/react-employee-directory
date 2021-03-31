@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import EmployeeTable from './EmployeeTable';
 import './App.css';
-import { populateEmpList } from './API';
+import { Form } from 'react-bootstrap';
+
+const Title = () => <h1 style={{width: '100%', textAlign: 'center'}}>Employee Directory</h1>
+
+const SearchBar = () => {
+  return (
+    <Form.Control type="text" placeholder="Normal text" />
+  );
+}
 
 function App() {
+
   return (
     <>
-      <div className="jumbotron">
-        <h1 className="display-4">Employee Directory</h1>
-        <p className="lead">This is an employee database.</p>
-        <hr className="my-4"></hr>
-        <p>Search for employees by name:</p>
-          <form>
-            <label>Employee name:</label>
-            <input type="text"></input>
-          </form>
-        <p className="lead">
-        </p>
-    </div>
+    <Title />
+    <br></br>
+    <SearchBar />
+    <br></br>
+    <EmployeeTable />
     </>
   );
 }
