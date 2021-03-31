@@ -20,23 +20,33 @@ const EmployeeTable = () => {
         <th>Title</th>
         <th>First Name</th>
         <th>Last Name</th>
+        <th>Age</th>
+        <th>Phone Number</th>
         <th>Email</th>
+        <th>Username</th>
+        <th>Location</th>
+        <th>Photo</th>
       </tr>
     </thead>
     <tbody>
-        {employees.map(({ name, email }) => (
-        <EmployeeRow name={name} email={email} />))}
+        {employees.map(({ name, email, location, login, dob, phone, picture }) => (
+        <EmployeeRow name={name} email={email} location={location} login={login} dob={dob} phone={phone} picture={picture} />))}
     </tbody>
   </Table>
     );
   }
 
-  const EmployeeRow = ({ name, email }) => (
+  const EmployeeRow = ({ name, email, location, login, dob, phone, picture }) => (
     <tr>
     <td>{name.title}</td>
     <td>{name.first}</td>
     <td>{name.last}</td>
+    <td>{dob.age}</td>
+    <td>{phone}</td>
     <td>{email}</td>
+    <td>{login.username}</td>
+    <td>{location.city}, {location.state}</td>
+    <td><img src={picture.thumbnail} alt='employee photos' /></td>
   </tr>
   );
 
