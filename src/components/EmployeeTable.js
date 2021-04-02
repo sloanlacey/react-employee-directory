@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 // import SearchBar from './SearchBar';
 
 
-const EmployeeTable = () => {
+const EmployeeTable = ({ searchTerm }) => {
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
@@ -30,8 +30,11 @@ const EmployeeTable = () => {
       </tr>
     </thead>
     <tbody>
-        {employees.filter(e => e.name.first.indexOf('A') !== -1).map(({ name, email, location, login, dob, phone, picture }) => (
-        <EmployeeRow name={name} email={email} location={location} login={login} dob={dob} phone={phone} picture={picture} />))}
+    {employees
+          .filter((e) => !searchTerm || e.name.first.search(searchTerm) !== -1)
+          .map(({ dob, name, email, location, login, phone, picture }, i) => (
+            <EmployeeRow name={name} email={email} location={location} login={login} dob={dob} phone={phone} picture={picture} i={i} />
+          ))}
     </tbody>
   </Table>
     );

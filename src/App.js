@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import EmployeeTable from './components/EmployeeTable';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import Header from './components/Jumbotron';
 
-// const Title = () => <h1 style={{width: '100%', textAlign: 'center'}}>Employee Directory</h1>
-
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
   return (
     <>
     <Header />
     <br></br>
-    <SearchBar />
+    <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
     <br></br>
-    <EmployeeTable />
+    <EmployeeTable searchTerm={searchTerm} />
     </>
   );
 }
