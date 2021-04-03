@@ -18,7 +18,7 @@ This application was built with React and Bootstrap to provide an easy to use an
 
 ## General Info
 
-This application is deployed [here](#) on heroku.
+This application is deployed [here](https://sloanlacey.github.io/react-team-builder) on GitHub Pages.
 
 ## Home Page
 
