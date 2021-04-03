@@ -1,18 +1,26 @@
-import React from "react";
-import { Form } from 'react-bootstrap';
+import React from 'react';
+import { Jumbotron, Form } from 'react-bootstrap';
 import '../styles/index.css';
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
     return (
-      <div className='search'>
-      <Form.Control
+        <>
+    <Jumbotron className='jumbo'>
+        <h1>Team Builder</h1>
+        <p>
+            Search for potential employees in our database by first name, last name or by city.
+        </p>
+        <div className='search'>
+    <Form.Control
         type="text"
-        placeholder="Start with a capital letter"
+        placeholder="Start typing to search for employees"
         value={searchTerm}
         onChange={({ target }) => setSearchTerm(target.value)}
     />
-    </div>
+        </div>
+    </Jumbotron>
+        </>
     );
-  }
+};
 
-  export default SearchBar;
+export default SearchBar;
