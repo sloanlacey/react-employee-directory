@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-// import SearchBar from './SearchBar';
-
 
 const EmployeeTable = ({ searchTerm }) => {
     const [employees, setEmployees] = useState([]);
@@ -18,37 +16,47 @@ const EmployeeTable = ({ searchTerm }) => {
       <Table striped bordered hover>
     <thead>
       <tr>
-        <th>Title</th>
         <th>First Name</th>
         <th>Last Name</th>
+        <th>Gender</th>
         <th>Age</th>
         <th>Phone Number</th>
         <th>Email</th>
-        <th>Username</th>
         <th>Location</th>
         <th>Photo</th>
       </tr>
     </thead>
     <tbody>
-    {employees
-          .filter((e) => !searchTerm || e.name.first.search(searchTerm) !== -1)
-          .map(({ dob, name, email, location, login, phone, picture }, i) => (
-            <EmployeeRow name={name} email={email} location={location} login={login} dob={dob} phone={phone} picture={picture} i={i} />
+          {employees
+          .filter((emps) => !searchTerm || emps.name.first.search(searchTerm) !== -1)
+          .map(({ dob, name, email, location, phone, picture, gender }, i) => (
+            <EmployeeRow name={name} email={email} location={location} dob={dob} phone={phone} picture={picture} gender={gender} i={i} />
+          ))}
+
+          {employees
+          .filter((emps) => !searchTerm || emps.name.last.search(searchTerm) !== -1)
+          .map(({ dob, name, email, location, phone, picture, gender }, i) => (
+            <EmployeeRow name={name} email={email} location={location} dob={dob} phone={phone} picture={picture} gender={gender} i={i} />
+          ))}
+
+          {employees
+          .filter((emps) => !searchTerm || emps.location.city.search(searchTerm) !== -1)
+          .map(({ dob, name, email, location, phone, picture, gender }, i) => (
+            <EmployeeRow name={name} email={email} location={location} dob={dob} phone={phone} picture={picture} gender={gender} i={i} />
           ))}
     </tbody>
   </Table>
     );
   }
 
-  const EmployeeRow = ({ name, email, location, login, dob, phone, picture }) => (
+  const EmployeeRow = ({ name, email, location, dob, phone, picture, gender }) => (
     <tr>
-    <td>{name.title}</td>
     <td>{name.first}</td>
     <td>{name.last}</td>
+    <td>{gender}</td>
     <td>{dob.age}</td>
     <td>{phone}</td>
     <td>{email}</td>
-    <td>{login.username}</td>
     <td>{location.city}, {location.state}</td>
     <td><img src={picture.thumbnail} alt='employee photos' /></td>
   </tr>

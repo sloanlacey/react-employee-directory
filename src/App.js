@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import EmployeeTable from './components/EmployeeTable';
-import './App.css';
+// import './App.css';
 import SearchBar from './components/SearchBar';
 import Header from './components/Jumbotron';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+
   return (
     <>
     <Header />
