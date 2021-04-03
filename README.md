@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# react-team-builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build your new team by searching through candidates in our database. Users can search by several parameters to narrow their results, or search for specific employees.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This application was built with React and Bootstrap to provide an easy to use and clean interface. Users can look through the entire employee database and search for employees to add to their teams by first name, last name, or by location. By searching the database, users can see employee contact information to get in touch with new teammates.
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [General Info](#general-info)
+- [Home Page](#home-page)
+- [Search Example](#search-example)
+- [Usage Instructions](#usage-instructions)
+- [Technologies](#technologies)
+- [Summary](#summary)
+- [Author](#author)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## General Info
 
-### `npm test`
+This application is deployed [here](#) on heroku.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Home Page
 
-### `npm run build`
+![Home](#)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Search Example
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Search Example](#)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage Instructions
 
-### `npm run eject`
+Users just need to type a name or location in the search field and the application will display your specialized results.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technologies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was created with:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [React](https://reactjs.org/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [JavaScript](https://www.javascript.com/)
 
-## Learn More
+- [Axios](https://www.npmjs.com/package/axios)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Node](https://www.npmjs.com/package/node)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [BootStrap](https://react-bootstrap.github.io/)
 
-### Code Splitting
+## Summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- This is a basic React application that uses hooks and components to display data for users. It could be modified to search by a number of different fields outlined by the API, and could be modified to build team rosters internally.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Sloan Lacey](https://github.com/sloanlacey/react-team-builder)
 
-### Making a Progressive Web App
+## Questions?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have questions about this application, please send an email to sloanlacey89@gmail.com, and I will get back to you as soon as possible.
