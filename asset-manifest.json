@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-team-builder/static/css/main.f42db1c8.chunk.css",
+    "main.js": "/react-team-builder/static/js/main.6ad3022f.chunk.js",
+    "main.js.map": "/react-team-builder/static/js/main.6ad3022f.chunk.js.map",
+    "runtime-main.js": "/react-team-builder/static/js/runtime-main.8bdee2c8.js",
+    "runtime-main.js.map": "/react-team-builder/static/js/runtime-main.8bdee2c8.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/react-team-builder/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.57629cb2.chunk.js": "/react-team-builder/static/js/2.57629cb2.chunk.js",
+    "static/js/2.57629cb2.chunk.js.map": "/react-team-builder/static/js/2.57629cb2.chunk.js.map",
+    "index.html": "/react-team-builder/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/react-team-builder/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.f42db1c8.chunk.css.map": "/react-team-builder/static/css/main.f42db1c8.chunk.css.map",
+    "static/js/2.57629cb2.chunk.js.LICENSE.txt": "/react-team-builder/static/js/2.57629cb2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bdee2c8.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.57629cb2.chunk.js",
+    "static/css/main.f42db1c8.chunk.css",
+    "static/js/main.6ad3022f.chunk.js"
+  ]
+}
