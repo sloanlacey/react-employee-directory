@@ -22,11 +22,11 @@ This application is deployed [here](#) on heroku.
 
 ## Home Page
 
-![Home](#)
+![Home](https://github.com/sloanlacey/react-team-builder/blob/main/public/images/home.png)
 
 ## Search Example
 
-![Search Example](#)
+![Search Example](https://github.com/sloanlacey/react-team-builder/blob/main/public/images/search-example.png)
 
 ## Usage Instructions
 
